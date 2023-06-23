@@ -6,6 +6,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section>
@@ -25,6 +26,29 @@
                 <a href="#" class="nav__links--primary">Sign Up</a>
               </li>
             </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                  <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list"><a href="" class="menu__link" onclick="openMenu()">About</a>
+                  </li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="openMenu()">Blog</a>
+                  </li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="openMenu()">Pricing</a>
+                  </li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="openMenu()">Contact US</a>
+                  </li>
+                  <li class="menu__list"><a href="" class="menu__link" onclick="openMenu()">Login</a>
+                  </li>
+                  <li class="menu__list">
+                  <button class="menu__link--btn" onclick="openMenu()">Sign Up</button>
+                </li>
+                </ul>
+              </div>
             </div>
         </nav>
         <header>
@@ -69,108 +93,111 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div class="services">
-                <div class="service__secure">
-                  <figure class="img__container">
-                    <img
-                      class="secure__img"
-                      src="assets.Treact/shield icon.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="service__description--secure">
-                    <h2 class="secure__title">Secure</h2>
-                    <p class="secure__para">
-                      We strictly only deal with vendors that provide top notch
-                      security.
-                    </p>
+
+              <div class="service"> 
+
+                  <div class="service__secure">
+                    <figure class="img__container">
+                      <img
+                        class="secure__img"
+                        src="assets.Treact/shield icon.svg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__description--secure">
+                      <h2 class="secure__title">Secure</h2>
+                      <p class="secure__para">
+                        We strictly only deal with vendors that provide top notch
+                        security.
+                      </p>
+                    </div>
                   </div>
-                </div>
-  
-                <div class="service__support">
-                  <figure class="img__container">
-                    <img
-                      class="support__img"
-                      src="assets.Treact/24:7support.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="service__description--support">
-                    <h2 class="support__title">24/7 Support</h2>
-                    <p class="support__para">
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
+    
+                  <div class="service__support">
+                    <figure class="img__container">
+                      <img
+                        class="support__img"
+                        src="assets.Treact/24:7support.svg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__description--support">
+                      <h2 class="support__title">24/7 Support</h2>
+                      <p class="support__para">
+                        Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                        quis nostrud.
+                      </p>
+                    </div>
                   </div>
-                </div>
-  
-                <div class="service__custom">
-                  <figure class="img__container">
-                    <img
-                      class="custom__img"
-                      src="assets.Treact/customize-icon.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="service__description--custom">
-                    <h2 class="custom__title">Customization</h2>
-                    <p class="custom__para">
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
+    
+                  <div class="service__custom">
+                    <figure class="img__container">
+                      <img
+                        class="custom__img"
+                        src="assets.Treact/customize-icon.svg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__description--custom">
+                      <h2 class="custom__title">Customization</h2>
+                      <p class="custom__para">
+                        Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                        quis nostrud.
+                      </p>
+                    </div>
                   </div>
-                </div>
-  
-                <div class="service__reliable">
-                  <figure class="img__container">
-                    <img
-                      class="reliable__img"
-                      src="assets.Treact/reliable-icon.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="service__description--reliable">
-                    <h2 class="reliable__title">Reliable</h2>
-                    <p class="reliable__para">
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
+    
+                  <div class="service__reliable">
+                    <figure class="img__container">
+                      <img
+                        class="reliable__img"
+                        src="assets.Treact/reliable-icon.svg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__description--reliable">
+                      <h2 class="reliable__title">Reliable</h2>
+                      <p class="reliable__para">
+                        Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                        quis nostrud.
+                      </p>
+                    </div>
                   </div>
-                </div>
-  
-                <div class="service__fast">
-                  <figure class="img__container">
-                    <img
-                      class="fast__img"
-                      src="assets.Treact/fast-icon.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="service__description--fast">
-                    <h2 class="fast__title">Fast</h2>
-                    <p class="fast__para">
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
+    
+                  <div class="service__fast">
+                    <figure class="img__container">
+                      <img
+                        class="fast__img"
+                        src="assets.Treact/fast-icon.svg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__description--fast">
+                      <h2 class="fast__title">Fast</h2>
+                      <p class="fast__para">
+                        Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                        quis nostrud.
+                      </p>
+                    </div>
                   </div>
-                </div>
-  
-                <div class="service__easy">
-                  <figure class="img__container">
-                    <img
-                      class="easy__img"
-                      src="assets.Treact/simple-icon.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="service__description--easy">
-                    <h2 class="easy__title">Easy</h2>
-                    <p class="easy__para">
-                      Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
-                      quis nostrud.
-                    </p>
+    
+                  <div class="service__easy">
+                    <figure class="img__container">
+                      <img
+                        class="easy__img"
+                        src="assets.Treact/simple-icon.svg"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__description--easy">
+                      <h2 class="easy__title">Easy</h2>
+                      <p class="easy__para">
+                        Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                        quis nostrud.
+                      </p>
+                    </div>
                   </div>
-                </div>
+              </div>
         </div>
     </section>
 
